@@ -1,6 +1,6 @@
 import axios from 'axios';
-const api = 'http://todoapp.hicloud.co.in:5000/api' 
-const API = axios.create({ baseURL:api });
+const api = 'http://localhost:5000/api' 
+const API = axios.create({ baseURL: api});
 
 API.interceptors.request.use(config => {
   const token = localStorage.getItem('token');
